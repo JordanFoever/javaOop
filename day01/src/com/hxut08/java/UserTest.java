@@ -17,7 +17,7 @@ package com.hxut08.java;
  *      2.2 关于权限修饰符不同
  *       属性:可以指定权限
  *         常用的  private public 缺 protected
- *         目 前使用缺就可以了
+ *         目 前使用缺省就可以了
  *        局部变量:不可以写修饰符
  *      2.3 默认初始化的情况
  *      属性: 类的属性 根据其类型 都有默认初始化值
@@ -27,7 +27,7 @@ package com.hxut08.java;
  *              引用数据类型(类,数组,接口):null
  *
  *        局部变量:没有默认初始化值
- *        也就是说我们在调用局部变量之前,一定要显示赋值
+ *        也就是说我们在调用局部变量之前,一定要显式赋值
  *        特别的形参在调用的时候赋值就可以了
  *       2.4 在内存中加载的位置
  *       属性:加载到堆空间中  (非static)
@@ -41,8 +41,6 @@ public class UserTest{
         System.out.println(u1.name); //run result=>nul
         System.out.println(u1.age); //run result=>0
         System.out.println(u1.isMale); //run result=>false
-
-
     }
 }
 
