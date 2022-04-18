@@ -21,4 +21,9 @@ public class BankTest {
 
         System.out.println("银行各户的个数为"+bank.getNumOfCustomers());
     }
+
 }
+
+
+喜欢即使一个
+
