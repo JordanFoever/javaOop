@@ -10,8 +10,10 @@ public class KidTest {
 
         someKid.printAge();
         someKid.setSalary(1);
-
         someKid.emloyeed();
         someKid.manWoman();
+
+
+
     }
 }

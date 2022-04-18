@@ -28,3 +28,4 @@ public class Kids extends MankKind{
         System.out.println("我"+yearsOld+"岁");
     }
 }
+
