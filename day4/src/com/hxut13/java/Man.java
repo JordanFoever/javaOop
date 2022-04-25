@@ -1,4 +1,4 @@
-package com.hxut12.java3;
+package com.hxut13.java;
 
 /**
  * @author weijiangquan
@@ -7,7 +7,6 @@ package com.hxut12.java3;
 public class Man extends Person{
 
     boolean isSmoking;
-    int id = 1111;
 
     public void earnMoney(){
         System.out.println("男人负责赚钱养家");

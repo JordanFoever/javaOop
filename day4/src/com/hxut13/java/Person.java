@@ -1,13 +1,12 @@
-package com.hxut12.java3;
+package com.hxut13.java;
 
 /**
  * @author weijiangquan
  * @date 2022/4/18 -21:07
  */
-public class Person{
+public class Person {
     String name;
     int age;
-    int id = 1002;
 
     public void eat(){
         System.out.println("人吃饭");
