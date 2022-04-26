@@ -20,6 +20,8 @@ public class Test {
 
         System.out.println(circle); //run result=>Circle{radius=2.3}
         System.out.println(circle1); //run result=>Circle{radius=2.3}
+
+
     }
 }
 
