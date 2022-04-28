@@ -86,7 +86,6 @@ abstract class Kite implements Flyable{
     public void fly() {
 
     }
-
 }
 
 
