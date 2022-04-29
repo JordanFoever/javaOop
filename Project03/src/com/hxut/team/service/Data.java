@@ -19,7 +19,7 @@ public class Data {
     //Programmer:  11, id, name, age, salary
     //Designer  :  12, id, name, age, salary, bonus
     //Architect :  13, id, name, age, salary, bonus, stock
-    public static final String[][] EMPLOYEES = {
+    public static final String[][] EMPLOYEES = {  //employees员工
             {"10", "1", "马  云", "22", "3000"},
             {"13", "2", "马化腾", "32", "18000", "15000", "2000"},
             {"11", "3", "李彦宏", "23", "7000"},
@@ -38,7 +38,7 @@ public class Data {
     //PC      :21, model, display
     //NoteBook:22, model, price
     //Printer :23, type, name
-    public static final String[][] EQIPMENTS = {
+    public static final String[][] EQIPMENTS = {  //eqipments(设备)
             {},
             {"22", "联想T4", "6000"},
             {"21", "戴尔", "NEC17寸"},
