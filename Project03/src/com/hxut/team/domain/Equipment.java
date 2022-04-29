@@ -7,6 +7,7 @@ package com.hxut.team.domain;
 public interface Equipment {
 
 
+
     String getDescription();//定义抽象方法
 
 }

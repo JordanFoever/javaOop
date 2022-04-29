@@ -47,4 +47,5 @@ public class Printer implements Equipment{
         this.type = type;
     }
     //*****************************end**********************************
+
 }

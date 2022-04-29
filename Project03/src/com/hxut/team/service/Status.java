@@ -27,5 +27,11 @@ public class Status {
         return NAME;
     }
     //*****************************end**********************************
+
+
+    @Override
+    public String toString() {
+        return NAME;
+    }
 }
 

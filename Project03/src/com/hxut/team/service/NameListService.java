@@ -85,13 +85,28 @@ public class NameListService {
         return null;
     }
 
+    /**
+     * 获取当前所有的员工
+     * @return
+     */
     public Employee[] getAllEmployees(){
-        return null;
+        return employees;
     }
 
-    public Employee getEmployee(int id){
-        return null;
+    /**
+     * 获取指定id的员工
+     * @param id
+     * @return
+     */
+    public Employee getEmployee(int id) throws TeamException {
+        for (int i = 0;i<employees.length;i++){
+            if(employees[i].getId() == id){
+                return employees[i];
+            }
+        }
+        throw new TeamException("找不到指定的员工"); //先占时的将异常抛出(最后再处理异常)
     }
-
 }
+
+
 

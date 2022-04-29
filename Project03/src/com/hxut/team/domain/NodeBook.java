@@ -45,5 +45,4 @@ public class NodeBook implements Equipment{
         this.price = price;
     }
     //*****************************end**********************************
-
 }
