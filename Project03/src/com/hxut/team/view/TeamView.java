@@ -3,6 +3,7 @@ package com.hxut.team.view;
 import com.hxut.team.domain.Employee;
 import com.hxut.team.domain.Programmer;
 import com.hxut.team.service.NameListService;
+import com.hxut.team.service.TeamException;
 import com.hxut.team.service.TeamService;
 
 /**
@@ -81,10 +82,43 @@ public class TeamView {
     }
     private void addMember(){
         //添加团队的成员
+        System.out.println("-------------------------添加成员--------------------------------------");
+        System.out.println("请输入要添加的员工的ID");
+        int id = TSUtility.readInt();
 
+        try {
+            Employee em  = listSvc.getEmployee(id);
+            teamSer.addMember(em);
+            System.out.println("添加成功");
+        } catch (TeamException e) {
+            System.out.println("添加失败,原因:"+e.getMessage());
+        }
+        //按回车键继承
+        TSUtility.readReturn();
     }
+
+    /**
+     * 删除团队的成员
+     */
     private void deleteMember(){
-        System.out.println("删除团队成员");
+        System.out.println("-----------------删除成员------------------------");
+        System.out.print("请输入删除员工的TID:");
+        int memberID = TSUtility.readInt();
+
+        System.out.print("确认是否删除(Y/N)");
+        char isDelete = TSUtility.readConfirmSelection();
+        if(isDelete == 'N'){
+            return;
+        }
+        try {
+            teamSer.removeMember(memberID);
+            System.out.println("删除成功");
+        } catch (TeamException e) {
+            System.out.println("删除失败,原因:"+e.getMessage());
+        }
+
+        //按回车键继承
+        TSUtility.readReturn();
     }
 
     public  static void main(String[] args) {
