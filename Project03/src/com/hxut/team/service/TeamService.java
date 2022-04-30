@@ -115,7 +115,35 @@ public class TeamService {
     /**
      * 从团队中把某一个员工干掉
      */
-    public void removeMember(int memberId){
+    public void removeMember(int memberId) throws TeamException {
+        int i = 0;
+        for (;i<total;i++){
+            if(team[i].getId() == memberId){
+                team[i].setStatus(Status.FREE);
+                break;
+            }
+        }
+
+        //为找到指定的memberId的情况
+        if(i==total){
+            throw new TeamException("找不到指定memberId员工,删除失败");
+        }
+
+        // 后面一个元素覆盖前面的一个元素,实现的是删除的操作
+        // 方式一
+        /*for(int j = i;j<total-1;j++){
+            team[j] = team[j+1];
+        }*/
+        // 方式二
+        for(int j = i+1;j<total;j++){
+            team[j-1]=team[j];
+        }
+
+        // 写法一
+        /*team[total-1]=null;
+        total--;*/
+        // 写法二
+        team[--total]=null;
 
     }
 }
